@@ -1,0 +1,16 @@
+{
+    "name": "aleale/mvc-example",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "MvcExample\\": "app/",
+            "Psr\\": "vendor/framework"
+        }
+    },
+    "authors": [
+        {
+            "name": "RaptorialThing"
+        }
+    ],
+    "require": {}
+}
