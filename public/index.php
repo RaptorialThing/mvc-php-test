@@ -8,16 +8,14 @@ use Psr\Http\Message\Request as Request;
 use Psr\Http\Message\Response as Response;
 
 
-echo RouteResolver::routeResolve(new Request,new ConfigLocator("routes"));
+echo RouteResolver::routeResolve(new Request, ConfigLocator::getConfig("routes"));
 
 session_start();
 
 
 $_SESSION["user"] = "user123";
 
-include __DIR__ . "/../views/layouts/content.php";
-
-include __DIR__ . "/../routes/Route.php";
+//include __DIR__ . "/../routes/Route.php";
 
 unset($_SESSION["user"]);
 

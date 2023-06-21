@@ -9,6 +9,7 @@ class Request implements RequestInterface {
     public $request = [];
 
     public function __construct() {
+
         $this->request["method"] = &$_SERVER['REQUEST_METHOD'] ?? 'GET';
         $this->request["headers"] = getallheaders();
         $this->request["uri"] = &$_SERVER["REQUEST_URI"];
