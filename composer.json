@@ -7,6 +7,11 @@
             "Psr\\": "vendor/framework"
         }
     },
+    "scripts": {
+        "migrate": [
+            "@php scripts/create_users.php"
+        ]
+    },
     "authors": [
         {
             "name": "RaptorialThing"
